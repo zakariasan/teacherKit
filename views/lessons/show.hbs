@@ -1,0 +1,60 @@
+<div class="card">
+    <div class="row card-title">
+        <h5 class="">
+            <span class="material-icons">
+                rocket_launch
+            </span>
+            Physique</h5>
+    </div>
+
+    <div class="row card-content">
+        <ul class="collapsible">
+
+            {{#each lessons_pc}}
+                <li class="">
+                    <div class="collapsible-header line center-align"><i class="material-icons">filter_drama</i>
+                        {{title}}
+                    </div>
+
+                    <div class="collapsible-body"><span>
+                           ---
+                           <a href="./{{body}}">TD</a>
+                        </span></div>
+                </li>
+            {{/each}}
+        </ul>
+
+    </div>
+
+    <div class="row card-title">
+        <h5 class="">
+            <span class="material-icons">
+                science
+            </span>
+            Chimie</h5>
+    </div>
+  <div class="row card-content">
+        <ul class="collapsible">
+
+            {{#each  lessons_ch }}
+            
+                <li class="">
+                    <div class="collapsible-header line center-align"><i class="material-icons">filter_drama</i>
+                        {{title}}
+                        {{status}}
+                    </div>
+
+                    <div class="collapsible-body"><span>
+
+                            <a>Cour</a>
+                            ---
+                            <a>TD</a>
+                        </span></div>
+                </li>
+        
+            {{/each}}
+        </ul>
+
+    </div>
+
+</div>

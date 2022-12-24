@@ -1,0 +1,39 @@
+{
+  "name": "teacher_files",
+  "version": "1.0.0",
+  "description": "all pedagogic files and courses exersies build and shared by teachers",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app",
+    "dev": "cross-env NODE_ENV=devOps nodemon app"
+  },
+  "keywords": [
+    "files",
+    "teachers",
+    "tcs",
+    "1bac",
+    "2bac"
+  ],
+  "author": "zak_4r1A",
+  "license": "MIT",
+  "dependencies": {
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "gridfs-stream": "^1.1.1",
+    "handlebars.filter": "^1.0.1",
+    "mongoose": "^6.7.0",
+    "multer": "^1.4.5-lts.1",
+    "multer-gridfs-storage": "^1.3.0",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
+}

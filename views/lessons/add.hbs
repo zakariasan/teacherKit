@@ -1,0 +1,61 @@
+
+
+<h3>Add lesson : </h3>
+<div class="row">
+    <form action="/lessons" method="POST" class="col s12" enctype="multipart/form-data" >
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="title" name="title">
+                <label for="title">Title</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <select id="status" name="status">
+                    <option value="physique" selected>Physique</option>
+                    <option value="chimie">Chimie</option>
+                </select>
+                <label for="status">Status</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <select id="level" name="level">
+                    <option value="2bac" selected>2-Bac</option>
+                    <option value="1bac">1-Bac</option>
+                    <option value="tcs">TCS</option>
+                    <option value="3ac">3-AC</option>
+                    <option value="2ac">2-AC</option>
+                    <option value="1ac">1-AC</option>
+                </select>
+                <label for="level">Level</label>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="input-field file-field">
+                <h5>Select pdf to upload:</h5>
+                    <div class = "btn">
+
+                        <span>Browse</span>
+                <input type="file" name="body" id="body">
+
+                </div>
+                 
+                  <div class = "file-path-wrapper">
+                     <input class = "file-path validate" type = "text"
+                        placeholder = "Upload file" />
+                  </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="submit" value="Save" class="btn">
+            <a href="/dashboard" class="btn orange">Cancel</a>
+        </div>
+    </form>
+</div>
