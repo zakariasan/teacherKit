@@ -29,10 +29,10 @@ const multerFilter = (req, file, cb) => {
 const lessons = multer({ storage : multerStorage, fileFilter:multerFilter });
 
 
-router.get('/',async (req, res) => {
+router.get('/:level',async (req, res) => {
 	try{
-		const lessons_pc = await Lesson.find({status: 'physique'}).populate('user').lean()
-		const lessons_ch = await Lesson.find({status: 'chimie'}).populate('user').lean()
+		const lessons_pc = await Lesson.find({status: 'physique', level:req.params.level}).populate('user').lean()
+		const lessons_ch = await Lesson.find({status: 'chimie', level:req.params.level}).populate('user').lean()
 
   res.render('lessons/show', {layout : 'lessons',lessons_ch, lessons_pc })
 	} catch(err){
@@ -42,7 +42,7 @@ router.get('/',async (req, res) => {
 	}
 })
 
-router.get('/add', (req, res) => {
+router.get('/lesson/add', (req, res) => {
   res.render('lessons/add', {layout : 'lessons' })
 })
 
@@ -59,7 +59,7 @@ router.post('/',lessons.single('body') ,async(req, res) => {
 			user : req.user
 		})
 
-		res.redirect('./lessons')
+		res.redirect(`/${req.body.level}`)
 } catch (error) {
   res.json({
     error,

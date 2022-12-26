@@ -1,480 +1,450 @@
-
-  <!-- 
+<!-- 
   :q
 
 :wq
     - #HEADER
   -->
 
-  <header class="header active" data-header>
+<header class="header active" data-header>
     <div class="container">
 
-      <h1>
-        <a href="#" class="logo">Teacherkit</a>
-      </h1>
+        <h1>
+            <a href="#" class="logo">Teacherkit</a>
+        </h1>
 
-      <nav class="navbar" data-navbar>
+        <nav class="navbar" data-navbar>
 
-        <div class="navbar-top">
-          <a href="#" class="logo">EduHome</a>
+            <div class="navbar-top">
+                <a href="#" class="logo">EduHome</a>
 
-          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
+                <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+
+            <ul class="navbar-list">
+
+                <li class="navbar-item">
+                    <a href="#home" class="navbar-link" data-nav-toggler>Home</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="#about" class="navbar-link" data-nav-toggler>About</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="#courses" class="navbar-link" data-nav-toggler>Courses</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="#event" class="navbar-link" data-nav-toggler>Event</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link" data-nav-toggler>Blog</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link" data-nav-toggler>Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <div class="header-action-btn img-usr">
+                <img src={{img}} alt="" style="height: 32px;" />
+            </div>
+
+            <div class="header-action-btn login-btn">
+
+                <span class="span">{{name}}</span>
+            </div>
+
+            <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
         </div>
 
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="#home" class="navbar-link" data-nav-toggler>Home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#about" class="navbar-link" data-nav-toggler>About</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#courses" class="navbar-link" data-nav-toggler>Courses</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#event" class="navbar-link" data-nav-toggler>Event</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-toggler>Blog</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-toggler>Contact</a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <div class="header-actions">
-
-        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
-          <ion-icon name="search-outline"></ion-icon>
-        </button>
-
-        <a href="#" class="header-action-btn login-btn">
-          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-          <span class="span">{{name}}</span>
-        </a>
-
-        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
-          <ion-icon name="menu-outline"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="overlay" data-nav-toggler data-overlay></div>
+        <div class="overlay" data-nav-toggler data-overlay></div>
 
     </div>
-  </header>
+</header>
 
-
-      <!-- 
+<!-- 
         - #COURSE
       -->
 
-      <section class="section course" id="courses" aria-label="course"
-        style="background-image: url('./images/course-bg.jpg')">
-        <div class="container">
+<section
+    class="section course"
+    id="courses"
+    aria-label="course"
+    style="background-image: url('./images/course-bg.jpg')"
+>
+    <div class="container">
 
-          <!--<p class="section-subtitle">Popular Courses</p>-->
+        <!--<p class="section-subtitle">Popular Courses</p>-->
 
-          <h2 class="h2 section-title">Our Popular Courses</h2>
+        <h2 class="h2 section-title">Our Popular Courses</h2>
 
-          <ul class="grid-list">
-
-            <li>
-              <div class="course-card">
-
-                <figure class="card-banner">
-                  <img src="./images/course-1.jpg" width="370" height="270" loading="lazy"
-                    alt="Competitive Strategy law for all students" class="img-cover">
-                </figure>
-
-                <div class="card-actions">
-
-                  <span class="badge">2-BAC</span>
-
-                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
-                      <i name="heart" class="fa fas-heart"></i>
-                  </button>
-
-                </div>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">35 Lessons</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                      <time datetime="PT18H15M44S" class="card-meta-text">SM -  PC - SVT</time>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="/lessons" class="card-title">deuxiéme année baccalauréat </a>
-                  </h3>
-
-
-                  <div class="card-footer">
-
-                </div>
-
-                </div>
-
-              </div>
-            </li>
+        <ul class="grid-list">
 
             <li>
-              <div class="course-card">
+                <div class="course-card">
 
-                <figure class="card-banner">
-                  <img src="./images/course-2.jpg" width="370" height="270" loading="lazy"
-                    alt="Machine Learning A-Z: Hands-On Python and java" class="img-cover">
-                </figure>
+                    <figure class="card-banner">
+                        <img
+                            src="./images/course-1.jpg"
+                            width="370"
+                            height="270"
+                            loading="lazy"
+                            alt="Competitive Strategy law for all students"
+                            class="img-cover"
+                        />
+                    </figure>
 
-                <div class="card-actions">
+                    <div class="card-actions">
 
-                  <span class="badge">1-BAC</span>
+                        <span class="badge">2-BAC</span>
 
-                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
-                    <!--<ion-icon name="heart"></ion-icon>-->
-                  </button>
+                        <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                            <i name="heart" class="fa fas-heart"></i>
+                        </button>
 
-                </div>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">48 Lessons</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                      <time datetime="PT18H15M44S" class="card-meta-text">SM - X </time>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">première année baccalauréat </a>
-                  </h3>
-
-                                   <div class="card-footer">
-
-                 
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="course-card">
-
-                <figure class="card-banner">
-                  <img src="./images/course-3.jpg" width="370" height="270" loading="lazy"
-                    alt="Achieving Advanced in Insights with Big" class="img-cover">
-                </figure>
-
-                <div class="card-actions">
-
-                  <span class="badge">TCS</span>
-
-                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
-                    <!--<ion-icon name="heart"></ion-icon>-->
-                  </button>
-
-                </div>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">80 Lessons</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <!--<ion-icon name="time-outline" aria-hidden="true"></ion-icon>-->
-
-                      <!--<time datetime="PT18H15M44S" class="card-meta-text"> </time>-->
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">tronc commun scientifique </a>
-                  </h3>
-                  <div class="card-footer">
-
-                   </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="course-card">
-
-                <figure class="card-banner">
-                  <img src="./images/course-4.jpg" width="370" height="270" loading="lazy"
-                    alt="Education Makes A Person A Responsible Citizen" class="img-cover">
-                </figure>
-
-                <div class="card-actions">
-
-                  <span class="badge">3-AC</span>
-
-                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
-                    <ion-icon name="heart"></ion-icon>
-                  </button>
-
-                </div>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <!--<ion cc-icon name="reader-outline" aria-hidden="true"></ion-icon>-->
-
-                      <span class="card-meta-text">31 Lessons</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                       <!--cc<ion-icon name="time-outline" aria-hidden="true"></ion-icon>-->
-
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">troisième année collège
- </a>
-                  </h3>
-
-                  <!--<div class="rating-wrapper">-->
-
-                    <!--<div class="rating">-->
-                      <!--<ion-icon name="star"></ion-icon>-->
-                      <!--<ion-icon name="star"></ion-icon>-->
-                      <!--<ion-icon name="star"></ion-icon>-->
-                      <!--<ion-icon name="star"></ion-icon>-->
-                      <!--<ion-icon name="star"></ion-icon>-->
-                    <!--</div>-->
-
-                    <!--<span class="rating-text">(18 Review)</span>-->
-
-                  <!--</div>-->
-
-                  <div class="card-footer">
-
-                    <!--<div class="card-price">-->
-                      <!--<span class="span">$49.00</span>-->
-
-                      <!--<del class="del">$59.00</del>-->
-                    <!--</div>-->
-
-                    <div class="card-meta-item">
-                      <!--<ion-icon name="people-outline" aria-hidden="true"></ion-icon>-->
-
-                      <!--<span class="card-meta-text">46 Students</span>-->
                     </div>
 
-                  </div>
+                    <div class="card-content">
+
+                        <ul class="card-meta-list">
+
+                            <li class="card-meta-item">
+                                <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                                <span class="card-meta-text">35 Lessons</span>
+                            </li>
+
+                            <li class="card-meta-item">
+                                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                                <time datetime="PT18H15M44S" class="card-meta-text">SM - PC - SVT</time>
+                            </li>
+
+                        </ul>
+
+                        <h3 class="h3">
+                            <a href="/lessons/2bac" class="card-title">deuxiéme année baccalauréat </a>
+                        </h3>
+
+                        <div class="card-footer">
+
+                        </div>
+
+                    </div>
 
                 </div>
-
-              </div>
             </li>
 
             <li>
-              <div class="course-card">
+                <div class="course-card">
 
-                <figure class="card-banner">
-                  <img src="./images/course-5.jpg" width="370" height="270" loading="lazy"
-                    alt="Building A Better World One Student At A Time" class="img-cover">
-                </figure>
+                    <figure class="card-banner">
+                        <img
+                            src="./images/course-2.jpg"
+                            width="370"
+                            height="270"
+                            loading="lazy"
+                            alt="Machine Learning A-Z: Hands-On Python and java"
+                            class="img-cover"
+                        />
+                    </figure>
 
-                <div class="card-actions">
+                    <div class="card-actions">
 
-                  <span class="badge">2-AC</span>
+                        <span class="badge">1-BAC</span>
 
-                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
-                    <ion-icon name="heart"></ion-icon>
-                  </button>
+                        <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                            <!--<ion-icon name="heart"></ion-icon>-->
+                        </button>
 
-                </div>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">36 Lessons</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                      <time datetime="PT18H15M44S" class="card-meta-text"></time>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title"> deuxième année collège </a>
-                  </h3>
-
-<!--                  <div class="rating-wrapper">-->
-
-                    <!--<div class="rating">-->
-                      <!--<ion-icon name="star"></ion-icon>-->
-                      <!--<ion-icon name="star"></ion-icon>-->
-                      <!--<ion-icon name="star"></ion-icon>-->
-                      <!--<ion-icon name="star"></ion-icon>-->
-                      <!--<ion-icon name="star"></ion-icon>-->
-                    <!--</div>-->
-
-                    <!--<span class="rating-text">(18 Review)</span>-->
-
-                  <!--</div>-->
-
-                  <div class="card-footer">
-
-<!--                    <div class="card-price">-->
-                      <!--<span class="span">$29.00</span>-->
-
-                      <!--<del class="del">$39.00</del>-->
-                    <!--</div>-->
-
-                    <div class="card-meta-item">
-                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">91 Students</span>
                     </div>
 
-                  </div>
+                    <div class="card-content">
+
+                        <ul class="card-meta-list">
+
+                            <li class="card-meta-item">
+                                <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                                <span class="card-meta-text">48 Lessons</span>
+                            </li>
+
+                            <li class="card-meta-item">
+                                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                                <time datetime="PT18H15M44S" class="card-meta-text">SM - X </time>
+                            </li>
+
+                        </ul>
+
+                        <h3 class="h3">
+                            <a href="/lessons/1bac" class="card-title">première année baccalauréat </a>
+                        </h3>
+
+                        <div class="card-footer">
+
+                        </div>
+
+                    </div>
 
                 </div>
-
-              </div>
             </li>
 
             <li>
-              <div class="course-card">
+                <div class="course-card">
 
-                <figure class="card-banner">
-                  <img src="./images/course-6.jpg" width="370" height="270" loading="lazy"
-                    alt="Education is About Forming Faithful Disciples" class="img-cover">
-                </figure>
+                    <figure class="card-banner">
+                        <img
+                            src="./images/course-3.jpg"
+                            width="370"
+                            height="270"
+                            loading="lazy"
+                            alt="Achieving Advanced in Insights with Big"
+                            class="img-cover"
+                        />
+                    </figure>
 
-                <div class="card-actions">
+                    <div class="card-actions">
 
-                  <span class="badge">1-AC</span>
+                        <span class="badge">TCS</span>
 
-                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
-                    <ion-icon name="heart"></ion-icon>
-                  </button>
+                        <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                            <!--<ion-icon name="heart"></ion-icon>-->
+                        </button>
 
-                </div>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">21 Lessons</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                      <!--<time datetime="PT1 cc8H15M44S" class="card-meta-text">18h 15m 44s</time>-->
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">première année collège</a>
-                  </h3>
-
-                <!--  <div class="rating-wrapper">-->
-
-                    <!--<div class="rating">-->
-                      <!--<ion-icon name="star"></ion-icon>-->
-                      <!--<ion-icon name="star"></ion-icon>-->
-                      <!--<ion-icon name="star"></ion-icon>-->
-                      <!--<ion-icon name="star"></ion-icon>-->
-                      <!--<ion-icon name="star"></ion-icon>-->
-                    <!--</div>-->
-
-                    <!--<span class="rating-text">(18 Review)</span>-->
-
-                  <!--</div>-->
-
-                  <div class="card-footer">
-
-                    <div class="card-price">
-                      <!--<span class="span">$79.00</span>-->
-
-                      <!--<del class="del">$89.00</del>-->
                     </div>
 
-                    <div class="card-meta-item">
-                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                    <div class="card-content">
 
-                      <span class="card-meta-text">22 Students</span>
+                        <ul class="card-meta-list">
+
+                            <li class="card-meta-item">
+                                <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                                <span class="card-meta-text">80 Lessons</span>
+                            </li>
+
+                            <li class="card-meta-item">
+                                <!--<ion-icon name="time-outline" aria-hidden="true"></ion-icon>-->
+
+                                <!--<time datetime="PT18H15M44S" class="card-meta-text"> </time>-->
+                            </li>
+
+                        </ul>
+
+                        <h3 class="h3">
+                            <a href="/lessons/tcs" class="card-title">tronc commun scientifique </a>
+                        </h3>
+                        <div class="card-footer">
+
+                        </div>
+
                     </div>
 
-                  </div>
-
                 </div>
-
-              </div>
             </li>
 
-          </ul>
+            <li>
+                <div class="course-card">
 
-          <a href="#" class="btn btn-primary">
+                    <figure class="card-banner">
+                        <img
+                            src="./images/course-4.jpg"
+                            width="370"
+                            height="270"
+                            loading="lazy"
+                            alt="Education Makes A Person A Responsible Citizen"
+                            class="img-cover"
+                        />
+                    </figure>
+
+                    <div class="card-actions">
+
+                        <span class="badge">3-AC</span>
+
+                        <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                            <ion-icon name="heart"></ion-icon>
+                        </button>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <ul class="card-meta-list">
+
+                            <li class="card-meta-item">
+                                <!--<ion cc-icon name="reader-outline" aria-hidden="true"></ion-icon>-->
+
+                                <span class="card-meta-text">31 Lessons</span>
+                            </li>
+
+                            <li class="card-meta-item">
+                                <!--cc<ion-icon name="time-outline" aria-hidden="true"></ion-icon>-->
+
+                            </li>
+
+                        </ul>
+
+                        <h3 class="h3">
+                            <a href="3ac" class="card-title">troisième année collège
+                            </a>
+                        </h3>
+
+                        <div class="card-footer">
+                            <div class="card-meta-item">
+                           </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="course-card">
+
+                    <figure class="card-banner">
+                        <img
+                            src="./images/course-5.jpg"
+                            width="370"
+                            height="270"
+                            loading="lazy"
+                            alt="Building A Better World One Student At A Time"
+                            class="img-cover"
+                        />
+                    </figure>
+
+                    <div class="card-actions">
+
+                        <span class="badge">2-AC</span>
+
+                        <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                            <ion-icon name="heart"></ion-icon>
+                        </button>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <ul class="card-meta-list">
+
+                            <li class="card-meta-item">
+                                <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                                <span class="card-meta-text">36 Lessons</span>
+                            </li>
+
+                            <li class="card-meta-item">
+                                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                                <time datetime="PT18H15M44S" class="card-meta-text"></time>
+                            </li>
+
+                        </ul>
+
+                        <h3 class="h3">
+                            <a href="2ac" class="card-title"> deuxième année collège </a>
+                        </h3>
+
+                        <div class="card-footer">
+
+
+                            <div class="card-meta-item">
+                                <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                                <span class="card-meta-text">91 Students</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="course-card">
+
+                    <figure class="card-banner">
+                        <img
+                            src="./images/course-6.jpg"
+                            width="370"
+                            height="270"
+                            loading="lazy"
+                            alt="Education is About Forming Faithful Disciples"
+                            class="img-cover"
+                        />
+                    </figure>
+
+                    <div class="card-actions">
+
+                        <span class="badge">1-AC</span>
+
+                        <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                            <ion-icon name="heart"></ion-icon>
+                        </button>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <ul class="card-meta-list">
+
+                            <li class="card-meta-item">
+                                <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                                <span class="card-meta-text">21 Lessons</span>
+                            </li>
+
+                            <li class="card-meta-item">
+                                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                            </li>
+
+                        </ul>
+
+                        <h3 class="h3">
+                            <a href="1ac" class="card-title">première année collège</a>
+                        </h3>
+
+                        <div class="card-footer">
+
+                            <div class="card-price">
+                            </div>
+
+                            <div class="card-meta-item">
+                                <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                                <span class="card-meta-text">22 Students</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </li>
+
+        </ul>
+
+        <a href="#" class="btn btn-primary">
             <span class="span">View All Courses</span>
 
             <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-          </a>
+        </a>
 
-        </div>
-      </section>
-
-
-
-
+    </div>
+</section>
