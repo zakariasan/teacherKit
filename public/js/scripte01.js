@@ -25,13 +25,12 @@ console.log("hello zak")
 const idItem = e.target.id;
 
 	try{
-		const res = await fetch("/lessons/",{
+		const res = await fetch("/lessons",{
 			method : 'delete',
 			headers: {'Content-type' : 'application/json'},
 			body : JSON.stringify( {"deletItem" : idItem})
 		})
-		const data = await res.json();
-		console.log(data)
+
 		location.reload();
 	}catch(err){console.error(err)}
 

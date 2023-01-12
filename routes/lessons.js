@@ -72,7 +72,7 @@ router.delete("/", async(req, res) => {
     try{
          await Lesson.findOneAndDelete({_id :req.body.deletItem})
  
-        res.redirect('/dashboard')
+		res.redirect('/')
  
     }catch(err){
  
