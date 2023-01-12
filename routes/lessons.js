@@ -68,9 +68,9 @@ router.post('/',lessons.single('body') ,async(req, res) => {
 })
 
 //@desc show add page
-router.delete("/:id", async(req, res) => {
+router.delete("/", async(req, res) => {
     try{
-         await Lesson.remove({_id :req.params.id})
+         await Lesson.findOneAndDelete({_id :req.body.deletItem})
  
         res.redirect('/dashboard')
  
@@ -82,6 +82,8 @@ router.delete("/:id", async(req, res) => {
  
 });
  
+
+
 
 
 
