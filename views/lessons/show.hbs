@@ -16,10 +16,43 @@
                         {{title}}
                     </div>
 
-                    <div class="collapsible-body"><span>
-                           ---
-                           <a href="../{{body}}">TD</a>
-                        </span></div>
+                    <div class="collapsible-body">
+                        <span>
+                            ---
+                            <a href="../{{body}}">TD</a>
+                        </span>
+                        <table class="striped bordered">
+                            <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                    <th>cour</th>
+                                    <th>TD</th>   
+                                    <th>Edit</th>   
+                                    <th>Delete</th>   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{user.displayName}}</td>
+                                    <td>
+                                        <a>Cour-</a>
+                                    </td>
+                                    <td>TD</td>
+                                    <td>
+                                        <a href="/google"><span class="material-icons"> edit</span></a>
+                                        </td>
+                                        <td>
+                                            <span id="para" class="material-icons delete-button" > delete_forever</span>
+                                    </td>
+                                </tr>
+
+                                <tr><td>Rahul Sharma</td><td>VI</td><td>B</td></tr>
+                                <tr><td>Mohan Sood</td><td>VI</td><td>A</td></tr>
+                            </tbody>
+                        </table>
+                        <hr />
+
+                    </div>
                 </li>
             {{/each}}
         </ul>
@@ -33,11 +66,11 @@
             </span>
             Chimie</h5>
     </div>
-  <div class="row card-content">
+    <div class="row card-content">
         <ul class="collapsible">
 
-            {{#each  lessons_ch }}
-            
+            {{#each lessons_ch}}
+
                 <li class="">
                     <div class="collapsible-header line center-align"><i class="material-icons">filter_drama</i>
                         {{title}}
@@ -51,7 +84,7 @@
                             <a>TD</a>
                         </span></div>
                 </li>
-        
+
             {{/each}}
         </ul>
 

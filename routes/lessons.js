@@ -67,6 +67,24 @@ router.post('/',lessons.single('body') ,async(req, res) => {
 }
 })
 
+//@desc show add page
+router.delete("/:id", async(req, res) => {
+    try{
+         await Lesson.remove({_id :req.params.id})
+ 
+        res.redirect('/dashboard')
+ 
+    }catch(err){
+ 
+        console.error(err)
+        res.render('error/404')
+    }
+ 
+});
+ 
+
+
+
 router.get('/download/:id',async(req,res)=>{
 
 	try{
